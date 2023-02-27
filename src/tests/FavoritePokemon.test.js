@@ -3,13 +3,13 @@ import FavoritePokemon from '../pages/FavoritePokemon';
 import renderWithRouter from '../renderWithRouter';
 
 describe('Testa o componente <FavoritePokemon.js />', () => {
-  test('Testa se é exibida na tela a mensagem No favorite pokemon found, caso a pessoa não tenha Pokémon favoritos;', () => {
+  test('Testa se é exibida na tela a mensagem No favorite pokemon found, caso a pessoa não tenha Pokémon favoritos', () => {
     renderWithRouter(<FavoritePokemon />);
     const emptyFavorites = screen.getByText(/no favorite pokémon found/i);
     expect(emptyFavorites).toBeInTheDocument();
   });
 
-  test('Testa se apenas são exibidos os Pokémon favoritados.', () => {
+  test('Testa se apenas são exibidos os Pokémon favoritados', () => {
     const testedPokemons = [
       {
         id: 143,
