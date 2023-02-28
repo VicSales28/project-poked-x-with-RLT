@@ -41,9 +41,6 @@ describe('Testa o componente <Pokedex.js />', () => {
   });
 
   test('Testa se é mostrado apenas um Pokémon por vez', () => {
-    const allBtn = screen.getByRole('button', { name: 'All' });
-    expect(allBtn).toBeVisible();
-    userEvent.click(allBtn);
     const currentArray = screen.getAllByTestId('pokemon-name');
     expect(currentArray).toHaveLength(1);
   });
@@ -55,18 +52,36 @@ describe('Testa o componente <Pokedex.js />', () => {
     const numTypes = pokemonsTypes.length;
     expect(allFilterBtns).toHaveLength(numTypes);
 
+    const currentType = screen.getByTestId('pokemon-type');
     // Testa se a Pokédex circula somente pelos Pokemóns daquele tipo:
     allFilterBtns.forEach((filterBtn) => {
       expect(filterBtn).toBeVisible();
       userEvent.click(filterBtn);
-      const currPokemonType = screen.getByTestId('pokemon-type');
-      expect(currPokemonType).toBeVisible();
-      expect(currPokemonType.textContent).toEqual(filterBtn.textContent);
+      expect(currentType).toBeVisible();
+      expect(currentType.textContent).toEqual(filterBtn.textContent);
     });
 
     // Testa se o texto do botão corresponde ao nome do tipo:
     allFilterBtns.forEach((filterBtn, index) => {
       expect(filterBtn.textContent).toEqual(pokemonsTypes[index]);
     });
+
+    // Testa se a Pokédex contém um botão para resetar o filtro:
+    const psychicBtn = screen.getByRole('button', { name: 'Psychic' });
+    expect(psychicBtn).toBeInTheDocument();
+    userEvent.click(psychicBtn);
+    expect(currentType).toBeInTheDocument();
+    expect(currentType.textContent).toBe('Psychic');
+
+    // Testa se a Pokedéx mostra os Pokémon normalmente (sem filtros) quando o botão All é clicado:
+    const allBtn = screen.getByRole('button', { name: 'All' });
+    expect(allBtn).toBeInTheDocument();
+    userEvent.click(allBtn);
+    expect(currentType).toBeInTheDocument();
+    expect(currentType.textContent).toBe('Electric');
+
+    const nextBtn = screen.getByRole('button', { name: 'Próximo Pokémon' });
+    userEvent.click(nextBtn);
+    expect(currentType.textContent).toBe('Fire');
   });
 });
