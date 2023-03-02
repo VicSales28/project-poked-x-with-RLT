@@ -27,8 +27,7 @@ The files created by me:
 <details>
   <summary><strong>🔎 Linter</strong></summary><br />
 
-### ESLint e Stylelint
-
+ESLint e Stylelint
 To ensure code quality, the `ESLint` and `Stylelint` linters were used in this project.
 
 ESLint is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code. In many ways it is similar to JSLint and JSHint with a few exceptions:
@@ -81,6 +80,6 @@ _Give me feedbacks, I'm open to new ideas_ 😉
 
 <p align="center">
   <img
-    src=""
+    src="https://cdn.discordapp.com/attachments/1062029691860566078/1080903940029288560/Captura_de_tela_em_2023-03-02_14-24-59.png"
     alt="result-gif" height="320" style="border-radius:50px;">
 </p>
