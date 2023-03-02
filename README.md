@@ -62,6 +62,12 @@ To check your version, use the command:
 4 - To view the application, use the command:
 `npm start`
 
+5 - You can run all unit tests locally to verify the proposed solution with the command below:
+`npm test`
+
+6 - An automated evaluator tests my tests. There is a folder called `./stryker` with several `filename.conf.json` files. Each of these files is this evaluator's configuration for a test file created. To test it individually, run the command below:
+`npx stryker run ./stryker/filename.conf.json`
+
 </details>
 
 <details>
