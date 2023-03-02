@@ -1,10 +1,10 @@
 # Pokedéx with RTL 🐙
 
-This project was developed while I was studying React Testing Library at Trybe Programming School.
+This project was developed while I was studying React Testing Library (RTL) at Trybe Programming School.
 
-I wrote tests for a React application, using Jest and the React Testing Library.
+I wrote tests for a React application, using Jest and the RTL.
 
-In this project, I used React-Testing-Library's selectors (queries) in automated tests and I simulated events with React-Testing-Library in automated tests.
+In this project, I used RTL's selectors (queries) in automated tests and I simulated events with React-Testing-Library in automated tests.
 
 Regular deadline: March 8, 2023 at 2:00 pm
 
