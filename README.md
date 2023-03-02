@@ -14,6 +14,7 @@ Regular deadline: March 8, 2023 at 2:00 pm
 📁 In the `tests` folder:
 
 The files created by me:
+
 `App.test.js`
 `About.test.js`
 `FavoritePokemon.test.js`
@@ -27,7 +28,6 @@ The files created by me:
 <details>
   <summary><strong>🔎 Linter</strong></summary><br />
 
-ESLint e Stylelint
 To ensure code quality, the `ESLint` and `Stylelint` linters were used in this project.
 
 ESLint is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code. In many ways it is similar to JSLint and JSHint with a few exceptions:
@@ -61,12 +61,12 @@ To check your version, use the command:
 4 - To view the application, use the command:
 `npm start`
 
-5 - You can run all unit tests locally to verify the proposed solution with the command below:
+5 - You can run all unit tests locally to verify the proposed solution with the command:
 `npm test`
 
 An automated evaluator tests my tests. There is a folder called `./stryker` with several `filename.conf.json` files. Each of these files is this evaluator's configuration for a test file created. 
 
-6 - To test it individually, run the command below:
+6 - To test it individually, run the command:
 `npx stryker run ./stryker/filename.conf.json`
 
 </details>
