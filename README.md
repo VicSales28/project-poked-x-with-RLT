@@ -1,4 +1,4 @@
-# Pokedéx with RTL 🐙
+# Pokedex with RTL 🐙
 
 This project was developed while I was studying React Testing Library (RTL) at Trybe Programming School.
 
