@@ -53,13 +53,13 @@ To run them locally, run the commands below:
 
 You must be using node version 16 (or higher).
 
-3 - To check your version, use the command:
+To check your version, use the command:
 `nvm --version`
 
-4 - With the required version, install the dependencies:
+3 - With the required version, install the dependencies:
 `npm install`
 
-5 - To view the application, use the command:
+4 - To view the application, use the command:
 `npm start`
 
 </details>
