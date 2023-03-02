@@ -1,13 +1,78 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Pokedéx with RTL 🐙
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+This project was developed while I was studying React Testing Library at Trybe Programming School.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+I wrote tests for a React application, using Jest and the React Testing Library.
+
+In this project, I used React-Testing-Library's selectors (queries) in automated tests and I simulated events with React-Testing-Library in automated tests.
+
+Regular deadline: March 8, 2023 at 2:00 pm
+
+<details>
+  <summary><strong>🏗 Project structure</strong></summary><br />
+
+📁 In the `tests` folder:
+
+The files created by me:
+`App.test.js`
+`About.test.js`
+`FavoritePokemon.test.js`
+`NotFound.test.js`
+`Pokedex.test.js`
+`Pokemon.test.js`
+`PokemonDetails.test.js`
+
+</details>
+
+<details>
+  <summary><strong>🔎 Linter</strong></summary><br />
+
+### ESLint e Stylelint
+
+To ensure code quality, the `ESLint` and `Stylelint` linters were used in this project.
+
+ESLint is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code. In many ways it is similar to JSLint and JSHint with a few exceptions:
+
+* ESLint uses Espree for JavaScript parsing.
+* ESLint uses an AST to evaluate patterns in code.
+* ESLint is completely 'pluggable', each of the rules is a plugin and you can add […]
+
+To run them locally, run the commands below:
+`npm run lint`
+`npm run lint:styles`
+
+</details>
+
+<details>
+  <summary><strong>🖥️ To access</strong></summary><br />
+
+1 - Clone the repository:
+`git clone git@github.com:VicSales28/project-pokedex-with-RLT.git`
+
+2 - Enter the repository folder you just cloned.
+
+You must be using node version 16 (or higher).
+
+3 - To check your version, use the command:
+`nvm --version`
+
+4 - With the required version, install the dependencies:
+`npm install`
+
+5 - To view the application, use the command:
+`npm start`
+
+</details>
+
+<details>
+  <summary><strong>🗣 Feedbacks</strong></summary><br />
+  
+_Give me feedbacks, I'm open to new ideas_ 😉
+
+</details>
+
+<p align="center">
+  <img
+    src=""
+    alt="result-gif" height="320" style="border-radius:50px;">
+</p>
